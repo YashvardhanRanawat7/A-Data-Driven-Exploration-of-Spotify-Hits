@@ -9,7 +9,8 @@ Discovering what specifically makes songs popular will aid upcoming artists in s
 
 # Data Source:
 
-![image](https://github.com/YashvardhanRanawat7/A-Data-Driven-Exploration-of-Spotify-Hits/assets/144149772/7cc8073f-c4d8-4ed4-9e5d-f23c2535e836)
+![image](https://github.com/YashvardhanRanawat7/A-Data-Driven-Exploration-of-Spotify-Hits/assets/144149772/3d4de136-b204-4088-a0b3-e6e89a365cce)
+
 
 
 Kaggle: https://www.kaggle.com/datasets/salvatorerastelli/spotify-and-youtube
