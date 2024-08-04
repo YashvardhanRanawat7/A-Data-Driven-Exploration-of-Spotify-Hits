@@ -1,10 +1,18 @@
+
 # Spotify EDA and Clustering
 
 ## Project Overview
 
-This project involves an Exploratory Data Analysis (EDA) and clustering of Spotify track data, aiming to understand what makes a song popular.
+This projects aims to find out the answer to the question "What makes a song popular ?". Furthermore, the project purpose is to understand which artists and genres are performing highly based on current 'track popularity'. From this, the project will try to identify patterns that set them apart from unpopular songs. This is based of a smaller sample of the entire Spotify Ecosystem. 
 
-### Key Features
+#### Business Problem Definition
+Scope of Project
+Spotify is the largest music streaming platform in the world. It has revolutionized music listening with various machine learning applications such as NLP and reinforcement learning. Furthermore, it has become a platform for new and upcoming artists to help them reach and engage with an audience. The scope of this project is to determine what makes a particular song popular on spotify? To do so we will explore the relationship between various audio features, genres, artists, and their respective track popularities to try and uncover what truly makes a popular track. More specifically, we’ll be focusing on the best and the worst of the tracks on Spotify to see if there are common themes among the two.
+
+#### Motivation (Why does it matter?)
+Discovering what specifically makes songs popular will aid upcoming artists in song production. Given knowledge on how to construct a popular song, they will be able to grow faster on the platform. Additionally, the Spotify marketing team can employ top-funnel strategies with this information to drive more users to the app.
+
+#### Key Features
 
 - Extensive EDA on Spotify track data
 - Utilization of Spotify API for data enrichment
@@ -51,7 +59,33 @@ The dataset combines information from:
 
 ## Key Findings
 
-(Note: Please add your main findings and insights here. You can include key visualizations or summary statistics that highlight your discoveries about what drives track popularity.)
+##### Do Certain Audio Features Lead to an Increase in Track Popularity?
+
+
+<img width="1096" alt="Screenshot 2024-08-04 at 4 09 05 AM" src="https://github.com/user-attachments/assets/3a4ac534-5990-498f-962f-e3fb2e75a289">
+
+##### Exploring Architypes
+
+Given that we can’t determine any relevant features that drive track popularity from the matrix, it might make sense to look at multiple features at once. We'll use our top / bottom artists and genres to explore this idea.
+
+<img width="1111" alt="Screenshot 2024-08-04 at 4 30 07 AM" src="https://github.com/user-attachments/assets/02401fed-14a9-4772-b70f-d2ceb8d3d681">
+
+Interestingly, we see a common trend for the clusters for popular artists and genres. Generally, people enjoy songs that are around the middle range for Valence, Energy, Danceability, and on the lower end for Acousticness, Instrumentalness, Liveliness``.
+
+Furthermore, the unpopular side of genres and artists also seem to share some commonality, but their clusters differ from the popular ones. When plotting the two against each other, you can easily visualize the discrepancy.
+
+##### Clustering
+During our data analysis, we encountered a significant challenge, which revolved around the fact that each song was associated with multiple genres, and a considerable number of these genres were found to be redundant. To address this, we are pursuing a clustering approach, which will enable us to achieve the following objectives:
+
+![image](https://github.com/user-attachments/assets/929da730-a419-4bbf-8d82-334ac1e540ba)
+
+- Cluster 0 : It consists of high energy and danceable songs
+- Cluster 1 : It consists of songs with high acousticness and low valence so it has songs with a 'sad' vibe
+- Cluster 2 : It has the highest mean track popularity and consists of highly danceable songs with high energy
+- Cluster 3 : This cluster also has high popularity and an even mix of audio features, it may consist of mainstream songs
+
+![image](https://github.com/user-attachments/assets/4f025669-2477-4062-bf5b-be872c780e50)
+
 
 ## API Work
 
