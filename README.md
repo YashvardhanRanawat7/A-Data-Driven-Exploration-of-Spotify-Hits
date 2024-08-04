@@ -1,6 +1,9 @@
 
 # Spotify EDA and Clustering
 
+![image](https://github.com/user-attachments/assets/76ec0d78-52d2-4af9-b2e4-dffd790558f9)
+
+
 ## Project Overview
 
 This projects aims to find out the answer to the question "What makes a song popular ?". Furthermore, the project purpose is to understand which artists and genres are performing highly based on current 'track popularity'. From this, the project will try to identify patterns that set them apart from unpopular songs. This is based of a smaller sample of the entire Spotify Ecosystem. 
